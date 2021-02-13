@@ -27,9 +27,9 @@ any filed claim, this endpoint returns `404 - Not Found`.
 {
 	"status": 200,
 	"policy_number": "0123456789",
-    "location": "357 Brittany Farms Ave.",
-    "claim_type": "collision coverage",
-    "Description": "I got hit."
+  "location": "357 Brittany Farms Ave.",
+  "claim_type": "collision coverage",
+  "Description": "I got hit."
 }
 ```
 
@@ -37,7 +37,7 @@ any filed claim, this endpoint returns `404 - Not Found`.
 ```JSON
 {
 	"status": 401,
-    "error": "Unauthorized"
+  "error": "Unauthorized"
 }
 ```
 
@@ -45,7 +45,7 @@ any filed claim, this endpoint returns `404 - Not Found`.
 ```JSON
 {
 	"status": 403,
-    "error": "Forbidden"
+  "error": "Forbidden"
 }
 ```
 
@@ -53,7 +53,7 @@ any filed claim, this endpoint returns `404 - Not Found`.
 ```JSON
 {
 	"status": 404,
-    "error": "Not Found"
+  "error": "Not Found"
 }
 ```
 
