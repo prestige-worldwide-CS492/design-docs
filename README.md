@@ -25,8 +25,8 @@ any filed claim, this endpoint returns `404 - Not Found`.
 <span style="font-size: 85%; background: SeaGreen; color: White; padding: 0.2em 0.5em; border-radius: 3px; font-family: Consolas, monaco, monospace;">200</span>
 ```json
 {
-	"status": 200,
-	"policy_number": "0123456789",
+  "status": 200,
+  "policy_number": "0123456789",
   "location": "357 Brittany Farms Ave.",
   "claim_type": "collision coverage",
   "Description": "I got hit."
@@ -36,7 +36,7 @@ any filed claim, this endpoint returns `404 - Not Found`.
 <span style="font-size: 85%; background: Tomato; color: White; padding: 0.2em 0.5em; border-radius: 3px; font-family: Consolas, monaco, monospace;">401</span>
 ```json
 {
-	"status": 401,
+  "status": 401,
   "error": "Unauthorized"
 }
 ```
@@ -44,7 +44,7 @@ any filed claim, this endpoint returns `404 - Not Found`.
 <span style="font-size: 85%; background: Tomato; color: White; padding: 0.2em 0.5em; border-radius: 3px; font-family: Consolas, monaco, monospace;">403</span>
 ```json
 {
-	"status": 403,
+  "status": 403,
   "error": "Forbidden"
 }
 ```
@@ -52,7 +52,7 @@ any filed claim, this endpoint returns `404 - Not Found`.
 <span style="font-size: 85%; background: Tomato; color: White; padding: 0.2em 0.5em; border-radius: 3px; font-family: Consolas, monaco, monospace;">404</span>
 ```json
 {
-	"status": 404,
+  "status": 404,
   "error": "Not Found"
 }
 ```
