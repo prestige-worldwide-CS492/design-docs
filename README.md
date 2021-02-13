@@ -7,7 +7,7 @@ removal of claims.
 
 
 <h3>
-	<span style="font-size: 85%; background: SeaGreen; color: White; padding: 0.2em 0.5em; border-radius: 3px; font-family: Consolas, monaco, monospace;">GET</span>
+  <span style="font-size: 85%; background: SeaGreen; color: White; padding: 0.2em 0.5em; border-radius: 3px; font-family: Consolas, monaco, monospace;">GET</span>
   <code>api.placeholder.com/claims/:claim_id`</code>
 </h3>
 This endpoint returns a JSON representation of a claim.  `claim_id` is a UUID corresponding to some
