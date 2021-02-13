@@ -23,7 +23,7 @@ any filed claim, this endpoint returns `404 - Not Found`.
 
 #### Response Codes
 <span style="font-size: 85%; background: SeaGreen; color: White; padding: 0.2em 0.5em; border-radius: 3px; font-family: Consolas, monaco, monospace;">200</span>
-```JSON
+```json
 {
 	"status": 200,
 	"policy_number": "0123456789",
@@ -34,7 +34,7 @@ any filed claim, this endpoint returns `404 - Not Found`.
 ```
 
 <span style="font-size: 85%; background: Tomato; color: White; padding: 0.2em 0.5em; border-radius: 3px; font-family: Consolas, monaco, monospace;">401</span>
-```JSON
+```json
 {
 	"status": 401,
   "error": "Unauthorized"
@@ -42,7 +42,7 @@ any filed claim, this endpoint returns `404 - Not Found`.
 ```
 
 <span style="font-size: 85%; background: Tomato; color: White; padding: 0.2em 0.5em; border-radius: 3px; font-family: Consolas, monaco, monospace;">403</span>
-```JSON
+```json
 {
 	"status": 403,
   "error": "Forbidden"
@@ -50,7 +50,7 @@ any filed claim, this endpoint returns `404 - Not Found`.
 ```
 
 <span style="font-size: 85%; background: Tomato; color: White; padding: 0.2em 0.5em; border-radius: 3px; font-family: Consolas, monaco, monospace;">404</span>
-```JSON
+```json
 {
 	"status": 404,
   "error": "Not Found"
