@@ -5,7 +5,7 @@ Design docs for CS-492
 All endpoints relating the creation, modification, retrieval, and
 removal of claims.
 
-### <span style="font-size: 85%; background: SeaGreen; color: White; padding: 0.2em 0.5em; border-radius: 3px; font-family: Consolas, monaco, monospace;">GET</span> `api.placeholder.com/claims/:claim_id`
+### <p style="font-size: 85%; background: SeaGreen; color: White; padding: 0.2em 0.5em; border-radius: 3px; font-family: Consolas, monaco, monospace;">GET</p> `api.placeholder.com/claims/:claim_id`
 This endpoint returns a JSON representation of a claim.  `claim_id` is a UUID corresponding to some
 claim which has been filed by a user.  Note that this endpoint will return `403 - Forbidden` if the
 supplied bearer token is not authorized to access the claim specified by `claim_id`.  If no bearer token is supplied, this endpoint returns `401 - Unauthorized`.  If the UUID does not correspond to
