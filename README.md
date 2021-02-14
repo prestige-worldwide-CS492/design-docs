@@ -8,8 +8,9 @@ removal of claims.
 
 <h3>
   <span style="font-size: 85%; background: SeaGreen; color: White; padding: 0.2em 0.5em; border-radius: 3px; font-family: Consolas, monaco, monospace;">GET</span>
-  <code>api.placeholder.com/claims/:claim_id`</code>
+  <code>api.placeholder.com/claims/:claim_id</code>
 </h3>
+
 This endpoint returns a JSON representation of a claim.  `claim_id` is a UUID corresponding to some
 claim which has been filed by a user.  Note that this endpoint will return `403 - Forbidden` if the
 supplied bearer token is not authorized to access the claim specified by `claim_id`.  If no bearer token is supplied, this endpoint returns `401 - Unauthorized`.  If the UUID does not correspond to
