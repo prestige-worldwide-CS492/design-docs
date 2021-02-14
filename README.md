@@ -7,7 +7,7 @@ removal of claims.
 
 
 <h3>
-  <span style="font-size: 85%; background: SeaGreen; color: White; padding: 0.2em 0.5em; border-radius: 3px; font-family: Consolas, monaco, monospace;">GET</span>
+  <img align="left" src="assets/GET.png" height="31">
   <code>api.placeholder.com/claims/:claim_id</code>
 </h3>
 
@@ -27,7 +27,8 @@ any filed claim, this endpoint returns `404 - Not Found`.
 | `authorization` | A JWT in the form of `Bearer {token}` |
 
 #### Response Codes
-<span style="font-size: 85%; background: SeaGreen; color: White; padding: 0.2em 0.5em; border-radius: 3px; font-family: Consolas, monaco, monospace;">200</span>
+<img align="left" src="assets/200.png" height="21">
+
 ```json
 {
   "status": 200,
@@ -38,7 +39,8 @@ any filed claim, this endpoint returns `404 - Not Found`.
 }
 ```
 
-<span style="font-size: 85%; background: Tomato; color: White; padding: 0.2em 0.5em; border-radius: 3px; font-family: Consolas, monaco, monospace;">401</span>
+<img align="left" src="assets/401.png" height="21">
+
 ```json
 {
   "status": 401,
@@ -46,7 +48,8 @@ any filed claim, this endpoint returns `404 - Not Found`.
 }
 ```
 
-<span style="font-size: 85%; background: Tomato; color: White; padding: 0.2em 0.5em; border-radius: 3px; font-family: Consolas, monaco, monospace;">403</span>
+<img align="left" src="assets/403.png" height="21">
+
 ```json
 {
   "status": 403,
@@ -54,7 +57,8 @@ any filed claim, this endpoint returns `404 - Not Found`.
 }
 ```
 
-<span style="font-size: 85%; background: Tomato; color: White; padding: 0.2em 0.5em; border-radius: 3px; font-family: Consolas, monaco, monospace;">404</span>
+<img align="left" src="assets/404.png" height="21">
+
 ```json
 {
   "status": 404,
