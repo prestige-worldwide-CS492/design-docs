@@ -7,7 +7,7 @@ removal of claims.
 
 
 <h3>
-  <img align="left" src="assets/GET.png" height="31">
+  <img src="assets/GET.png" height="26.4" align="left">
   <code>api.placeholder.com/claims/:claim_id</code>
 </h3>
 
