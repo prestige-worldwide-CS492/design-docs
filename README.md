@@ -243,4 +243,34 @@ If the username password combination is invalid, this endpoit returns `401 - Una
   "status": 401,
   "error": "Unauthorized"
 }
+```
 
+
+<h3>
+  <img src="assets/GET.png" height="26.4" align="left">
+  <code>auth.placeholder.com/key</code>
+</h3>
+
+This endpoint returns the server's public key.  The public key can
+be used by any client to verify weather this server is the issuer
+of a JWT.  This endpoint return `404 - Not Found` if a public-private
+key pair has not yet been created or if the server is rotating keys.
+
+#### Response Codes
+
+<img align="left" src="assets/200.png" height="21">
+
+```json
+{
+  "status": 200,
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnzyis1ZjfNB0bBgKFMSvvkTtwlvBsaJq7S5wA+kzeVOVpVWwkWdVha4s38XM/pa/yr47av7+z3VTmvDRyAHcaT92whREFpLv9cj5lTeJSibyr/Mrm/YtjCZVWgaOYIhwrXwKLqPr/11inWsAkfIytvHWTxZYEcXLgAXFuUuaS3uF9gEiNQwzGTU1v0FqkqTBr4B8nW3HCN47XUu0t8Y0e+lf4s4OxQawWD79J9/5d3Ry0vbV3Am1FtGJiJvOwRsIfVChDpYStTcHTCMqtvWbV6L11BWkpzGXSW4Hv43qa+GSYOD2QU68b59oSk2OB+BtOLpJofmbGEGgvmwyCI9MwIDAQAB"
+}
+```
+
+<img align="left" src="assets/404.png" height="21">
+
+```json
+{
+  "status": 404,
+  "error": "Not Found"
+}
