@@ -274,3 +274,63 @@ key pair has not yet been created or if the server is rotating keys.
   "status": 404,
   "error": "Not Found"
 }
+```
+
+
+<h3>
+  <img src="assets/POST.png" height="26.4" align="left">
+  <code>auth.placeholder.com/signup</code>
+</h3>
+
+This endpoint registers a new user with the authentications server.  Basic login
+details like name, policy, username, email, and password should be POSTed as a
+JSON-encoded string.  On successful signup, the auth server will issue a JWT for
+the new user to sign them in.  On signup error, this endpoint returns `401 - Unauthorized`.
+
+#### Required Parameters
+|  Parameter |                               Description                            |
+|:----------:|:--------------------------------------------------------------------:|
+| `username` | A UUID representing a user which has been registered with the server |
+| `password` | The policy number with which the user wants to file |
+| `policy` | The policy number to create the account with |
+| `email` | The email address of the account-holder |
+#### Response Codes
+
+<img align="left" src="assets/200.png" height="21">
+
+```json
+{
+  "status": 200,
+  "token": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiYWRtaW4iOnRydWUsImlhdCI6MTUxNjIzOTAyMn0.POstGetfAytaZS82wHcjoTyoqhMyxXiWdR7Nn7A29DNSl0EiXLdwJ6xC6AfgZWF1bOsS_TuYI3OG85AmiExREkrS6tDfTQ2B3WXlrr-wp5AokiRbz3_oB4OxG-W9KcEEbDRcZc0nH3L7LzYptiy1PtAylQGxHTWZXtGz4ht0bAecBgmpdgXMguEIcoqPJ1n3pIWk_dUZegpqx0Lka21H6XxUTxiy8OcaarA8zdnPUnV6AmNP3ecFawIFYdvJB_cm-GvpCSbr8G8y_Mllj8f4x9nBH8pQux89_6gUY618iYv7tuPWBFfEbLxtF2pZS6YC1aSfLQxeNe8djT9YjpvRZA"
+}
+```
+
+<img align="left" src="assets/401.png" height="21">
+
+```json
+{
+  "status": 401,
+  "error": "Unauthorized"
+}
+```
+
+
+<h3>
+  <img src="assets/GET.png" height="26.4" align="left">
+  <code>auth.placeholder.com/version</code>
+</h3>
+
+This endpoint return the current version of the auth server running 
+at this address.  It does not require any form of authorization 
+to access.
+
+
+#### Response Codes
+<img align="left" src="assets/200.png" height="21">
+
+```json
+{
+  "status": 200,
+  "version": "0.3.0"
+}
+```
