@@ -8,7 +8,7 @@ removal of claims.
 
 <h3>
   <img src="assets/GET.png" height="26.4" align="left">
-  <code>api.placeholder.com/claims/:claim_id</code>
+  <code>api.placeholder.com/claim/:claim_id</code>
 </h3>
 
 This endpoint returns a JSON representation of a claim.  `claim_id` is a UUID corresponding to some
