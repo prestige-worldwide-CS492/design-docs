@@ -207,3 +207,40 @@ to access.
 
 
 ## Authentication
+All endpoints for working with authentication.  Note that the authentication
+server only issues JWTs and is seperate from the API server.
+
+<h3>
+  <img src="assets/POST.png" height="26.4" align="left">
+  <code>auth.placeholder.com/login</code>
+</h3>
+
+This endpoint authenticates a user by their username and password.  If the user
+can be authenticated, this endpoint will return a JWT signed by the auth server.
+If the username password combination is invalid, this endpoit returns `401 - Unauthorized`
+
+#### Required Parameters
+|  Parameter |                               Description                            |
+|:----------:|:--------------------------------------------------------------------:|
+| `username` | A UUID representing a user which has been registered with the server |
+| `password` | The policy number with which the user wants to file |
+
+#### Response Codes
+
+<img align="left" src="assets/200.png" height="21">
+
+```json
+{
+  "status": 200,
+  "token": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiYWRtaW4iOnRydWUsImlhdCI6MTUxNjIzOTAyMn0.POstGetfAytaZS82wHcjoTyoqhMyxXiWdR7Nn7A29DNSl0EiXLdwJ6xC6AfgZWF1bOsS_TuYI3OG85AmiExREkrS6tDfTQ2B3WXlrr-wp5AokiRbz3_oB4OxG-W9KcEEbDRcZc0nH3L7LzYptiy1PtAylQGxHTWZXtGz4ht0bAecBgmpdgXMguEIcoqPJ1n3pIWk_dUZegpqx0Lka21H6XxUTxiy8OcaarA8zdnPUnV6AmNP3ecFawIFYdvJB_cm-GvpCSbr8G8y_Mllj8f4x9nBH8pQux89_6gUY618iYv7tuPWBFfEbLxtF2pZS6YC1aSfLQxeNe8djT9YjpvRZA"
+}
+```
+
+<img align="left" src="assets/401.png" height="21">
+
+```json
+{
+  "status": 401,
+  "error": "Unauthorized"
+}
+
