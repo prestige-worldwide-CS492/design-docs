@@ -1,2 +1,2 @@
-# design-docs (by sujith)
-Design docs for CS492
+# design-docs
+Design docs for CS410
